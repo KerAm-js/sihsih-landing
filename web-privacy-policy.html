@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
     <meta name="generator" content="LibreOffice 25.2.3.2 (Linux)" />
     <meta name="author" content="Hus" />
@@ -12,34 +13,20 @@
     <style type="text/css">
       @font-face {
         font-family: "Gilroy";
-        src: url("Gilroy-Regular.ttf") format("truetype");
+        src: url("fonts/Gilroy-Regular.ttf") format("truetype");
         font-weight: normal;
         font-style: normal;
       }
 
       @font-face {
         font-family: "Gilroy";
-        src: url("Gilroy-Bold.ttf") format("truetype");
+        src: url("fonts/Gilroy-Bold.ttf") format("truetype");
         font-weight: 700;
         font-style: normal;
       }
-      @page {
-        size: 8.27in 11.69in;
-        margin-left: 1.18in;
-        margin-right: 0.59in;
-        margin-top: 0.79in;
-        margin-bottom: 0.49in;
-      }
       p {
-        direction: ltr;
-        margin-bottom: 0.1in;
-        widows: 2;
-        orphans: 2;
         text-align: left;
-        line-height: 115%;
-        background: transparent;
         font-size: 17px;
-        font-family: "Gilroy", "Times New Roman CYR", serif;
       }
       b {
         font-family: "Gilroy";
@@ -69,75 +56,184 @@
           padding-right: 70px;
         }
       }
+      body {
+        font-family: "Gilroy", Arial, sans-serif;
+        font-size: 17px;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 25px;
+      }
+      h2 {
+        font-size: 21px;
+      }
+      p {
+        font-size: 17px;
+      }
+      a:link {
+        color: #0563c1;
+        text-decoration: none;
+      }
+
+      .footer-container {
+        background-color: #262626;
+        width: 100%;
+        margin-top: 40px;
+      }
+      .main-footer {
+        background-color: #262626;
+        color: white;
+        padding: 60px 0;
+        font-size: 16px;
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        min-height: 123px;
+      }
+
+      .footer-columns {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 47%;
+        gap: 40px;
+      }
+
+      .footer-section h2 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: white;
+      }
+
+      .footer-section p {
+        margin: 0.4rem 0;
+        color: white;
+      }
+
+      .footer-section a {
+        color: white;
+      }
+
+      .footer-section a:hover {
+        text-decoration: underline;
+      }
+
+      .footer-divider {
+        display: none;
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        margin: 40px 70px;
+      }
+
+      .footer-bottom {
+        text-align: left;
+        width: 50%;
+        border-right: 1px solid rgba(255, 255, 255, 0.15);
+      }
+
+      .footer-bottom p {
+        margin: 0.3rem 0;
+      }
+      .table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 600px;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+
+      /* Tablet */
+      @media (max-width: 1024px) {
+        .main-footer {
+          background-color: #262626;
+          color: white;
+          padding: 40px 0;
+          display: flex;
+          flex-direction: column;
+        }
+        .footer-columns {
+          flex-direction: row;
+          gap: 50px;
+
+          width: 100%;
+        }
+
+        .footer-divider {
+          margin: 30px 0px;
+        }
+        .footer-divider {
+          display: block;
+        }
+        .footer-bottom {
+          border: none;
+        }
+      }
+
+      /* Mobile */
+      @media (max-width: 620px) {
+        .footer-columns {
+          flex-direction: column;
+          gap: 30px;
+
+          text-align: left;
+        }
+
+        .footer-divider {
+          margin: 30px 0pх;
+        }
+
+        .footer-bottom {
+          text-align: center;
+          text-align: left;
+          width: 100%;
+        }
+      }
     </style>
   </head>
-  <body lang="ru-RU" link="#0563c1" vlink="#800000" dir="ltr">
+  <body lang="ru-RU">
     <div class="container">
-      <table width="100%" cellpadding="7" cellspacing="0">
-        <col width="125*" />
-        <col width="131*" />
-      </table>
-      <p
-        align="center"
-        style="text-indent: 0.49in; margin-bottom: 0.11in; line-height: 108%"
-      >
-        <br />
-        <br />
-      </p>
-      <p
-        align="center"
-        style="
-          widows: 0;
-          line-height: 100%;
-          margin-top: 0.08in;
-          margin-bottom: 0.08in;
-          orphans: 0;
-        "
-      >
-        <b style="font-size: 25px;">
+      <p>
+        <b style="font-size: 25px">
           Политика
           <br />
           конфиденциальности персональных данных посетителей сайта в
           информационно-телекоммуникационной сети &quot;Интернет&quot;
         </b>
       </p>
-      <p
-        align="center"
-        style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0"
-      >
+      <p style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0">
         (официальный сайт ООО «ПОКОЛЕНИЕ СМАРТ»,
         <br />
         агрегатор заказа еды и продуктов «СИХСИХ»)
       </p>
       <p
         align="justify"
-        style="
-          orphans: 0;
-          margin-bottom: 0in;
-          line-height: 100%;
-          widows: 0;
-          text-indent: 0.5in;
-        "
+        style="orphans: 0; margin-bottom: 0in; line-height: 100%; widows: 0"
       >
         <br />
       </p>
-      <p
-        align="center"
-        style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0"
-      >
+      <p style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0">
         <a name="sub_100"></a>
 
-        <b style="font-size: 21px;">1. Общие положения</b>
+        <b style="font-size: 21px">1. Общие положения</b>
       </p>
       <p
         align="justify"
-        style="
-          text-indent: 0.5in;
-          widows: 0;
-          line-height: 100%;
-          margin-bottom: 0in;
-          orphans: 0;
-        "
+        style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0"
       >
         <a name="sub_101"></a>
 
@@ -164,7 +260,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -179,7 +275,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -204,7 +300,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -222,7 +318,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -240,7 +336,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -257,7 +353,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -279,7 +375,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -297,7 +393,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -312,7 +408,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -329,7 +425,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -342,7 +438,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -358,7 +454,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -375,7 +471,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -388,7 +484,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -402,7 +498,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -416,7 +512,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -429,7 +525,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -442,7 +538,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -455,7 +551,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -469,7 +565,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -482,7 +578,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -495,7 +591,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -508,7 +604,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -520,7 +616,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -533,7 +629,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -547,7 +643,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -559,7 +655,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -576,7 +672,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -589,23 +685,14 @@
       </p>
       <p
         align="justify"
-        style="
-          orphans: 0;
-          margin-bottom: 0in;
-          line-height: 100%;
-          widows: 0;
-          text-indent: 0.5in;
-        "
+        style="orphans: 0; margin-bottom: 0in; line-height: 100%; widows: 0"
       >
         <br />
       </p>
-      <p
-        align="center"
-        style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0"
-      >
+      <p style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0">
         <a name="sub_200"></a>
 
-        <b style="font-size: 21px;">
+        <b style="font-size: 21px">
           2. Обработка, хранение и передача персональных данных
           <br />
           пользователей сайта
@@ -613,13 +700,7 @@
       </p>
       <p
         align="justify"
-        style="
-          text-indent: 0.5in;
-          widows: 0;
-          line-height: 100%;
-          margin-bottom: 0in;
-          orphans: 0;
-        "
+        style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0"
       >
         <a name="sub_201"></a>
 
@@ -632,7 +713,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -648,7 +729,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -662,7 +743,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -675,7 +756,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -686,131 +767,115 @@
       </p>
       <p
         align="justify"
-        style="
-          orphans: 0;
-          margin-bottom: 0in;
-          line-height: 100%;
-          widows: 0;
-          text-indent: 0.5in;
-        "
+        style="orphans: 0; margin-bottom: 0in; line-height: 100%; widows: 0"
       >
         <br />
       </p>
-      <table width="100%" cellpadding="7" cellspacing="0">
-        <col width="82" />
-        <col width="193" />
-        <col width="100" />
-        <col width="185" />
-        <tr valign="top">
-          <td
-            width="82"
-            height="41"
-            style="border: 1px solid #000000; padding: 0in 0.08in"
-          >
-            <p align="center" style="widows: 0; orphans: 0">
-              <b>Категория персональных данных</b>
-            </p>
-          </td>
-          <td
-            width="193"
-            style="border: 1px solid #000000; padding: 0in 0.08in"
-          >
-            <p align="center" style="widows: 0; orphans: 0">
-              <b>Перечень персональных данных</b>
-            </p>
-          </td>
-          <td
-            width="100"
-            style="border: 1px solid #000000; padding: 0in 0.08in"
-          >
-            <p align="center" style="widows: 0; orphans: 0">
-              <b>Способ обработки</b>
-            </p>
-          </td>
-          <td
-            width="185"
-            style="border: 1px solid #000000; padding: 0in 0.08in"
-          >
-            <p align="center" style="widows: 0; orphans: 0">
-              <b>Срок обработки и хранения</b>
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td
-            width="82"
-            height="169"
-            style="border: 1px solid #000000; padding: 0in 0.08in"
-          >
-            <p align="center" style="widows: 0; orphans: 0">
-              Общие персональные данные
-            </p>
-          </td>
-          <td
-            width="193"
-            valign="top"
-            style="border: 1px solid #000000; padding: 0in 0.08in"
-          >
-            <p style="widows: 0; margin-bottom: 0in; orphans: 0">
-              - фамилия, имя, отчество;
-            </p>
-            <p style="widows: 0; margin-bottom: 0in; orphans: 0">
-              - номера телефонов (домашний, мобильный, рабочий);
-            </p>
-            <p style="widows: 0; margin-bottom: 0in; orphans: 0">
-              - адрес электронной почты;
-            </p>
-            <p style="widows: 0; margin-bottom: 0in; orphans: 0">
-              - IP-адрес устройства ЭВМ;
-            </p>
-            <p style="widows: 0; margin-bottom: 0in; orphans: 0">
-              <a name="_GoBack"></a>
+      <div class="table-container">
+        <table width="100%" cellpadding="7" cellspacing="0">
+          <tr valign="top">
+            <td
+              width="82"
+              height="41"
+              style="border: 1px solid #000000; padding: 0in 0.08in"
+            >
+              <p style="widows: 0; orphans: 0">
+                <b>Категория персональных данных</b>
+              </p>
+            </td>
+            <td
+              width="193"
+              style="border: 1px solid #000000; padding: 0in 0.08in"
+            >
+              <p style="widows: 0; orphans: 0">
+                <b>Перечень персональных данных</b>
+              </p>
+            </td>
+            <td
+              width="100"
+              style="border: 1px solid #000000; padding: 0in 0.08in"
+            >
+              <p style="widows: 0; orphans: 0">
+                <b>Способ обработки</b>
+              </p>
+            </td>
+            <td
+              width="185"
+              style="border: 1px solid #000000; padding: 0in 0.08in"
+            >
+              <p style="widows: 0; orphans: 0">
+                <b>Срок обработки и хранения</b>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td
+              width="82"
+              height="169"
+              style="border: 1px solid #000000; padding: 0in 0.08in"
+            >
+              <p style="widows: 0; orphans: 0">Общие персональные данные</p>
+            </td>
+            <td
+              width="193"
+              valign="top"
+              style="border: 1px solid #000000; padding: 0in 0.08in"
+            >
+              <p style="widows: 0; margin-bottom: 0in; orphans: 0">
+                - фамилия, имя, отчество;
+              </p>
+              <p style="widows: 0; margin-bottom: 0in; orphans: 0">
+                - номера телефонов (домашний, мобильный, рабочий);
+              </p>
+              <p style="widows: 0; margin-bottom: 0in; orphans: 0">
+                - адрес электронной почты;
+              </p>
+              <p style="widows: 0; margin-bottom: 0in; orphans: 0">
+                - IP-адрес устройства ЭВМ;
+              </p>
+              <p style="widows: 0; margin-bottom: 0in; orphans: 0">
+                <a name="_GoBack"></a>
 
-              - уникальный идентификатор пользователя (УИП);
-            </p>
-            <p style="widows: 0; margin-bottom: 0in; orphans: 0">
-              - адрес доставки товара;
-            </p>
-            <p style="widows: 0; margin-bottom: 0in; orphans: 0">
-              - место жительства;
-            </p>
-            <p style="widows: 0; margin-bottom: 0in; orphans: 0">
-              - информация о банковских картах (Ф. И. О., N карты);
-            </p>
-            <p style="widows: 0; orphans: 0">- иная контактная информация.</p>
-          </td>
-          <td
-            width="100"
-            style="border: 1px solid #000000; padding: 0in 0.08in"
-          >
-            <p align="center" style="widows: 0; orphans: 0">
-              автоматизированная обработка персональных данных
-            </p>
-          </td>
-          <td
-            width="185"
-            valign="top"
-            style="border: 1px solid #000000; padding: 0in 0.08in"
-          >
-            <p align="center" style="widows: 0; orphans: 0">
-              В соответствии со ст. 5 Федерального закона от 27.07.2006 №152-ФЗ
-              «О персональных данных»: «срок хранения персональных данных
-              составляет срок не дольше, чем этого требуют цели их обработки»,
-              но не более 3 лет с момента получения согласия пользователя на
-              обработку персональных данных
-            </p>
-          </td>
-        </tr>
-      </table>
+                - уникальный идентификатор пользователя (УИП);
+              </p>
+              <p style="widows: 0; margin-bottom: 0in; orphans: 0">
+                - адрес доставки товара;
+              </p>
+              <p style="widows: 0; margin-bottom: 0in; orphans: 0">
+                - место жительства;
+              </p>
+              <p style="widows: 0; margin-bottom: 0in; orphans: 0">
+                - информация о банковских картах (Ф. И. О., N карты);
+              </p>
+              <p style="widows: 0; orphans: 0">- иная контактная информация.</p>
+            </td>
+            <td
+              width="100"
+              style="border: 1px solid #000000; padding: 0in 0.08in"
+            >
+              <p style="widows: 0; orphans: 0">
+                автоматизированная обработка персональных данных
+              </p>
+            </td>
+            <td
+              width="185"
+              valign="top"
+              style="border: 1px solid #000000; padding: 0in 0.08in"
+            >
+              <p style="widows: 0; orphans: 0">
+                В соответствии со ст. 5 Федерального закона от 27.07.2006
+                №152-ФЗ «О персональных данных»: «срок хранения персональных
+                данных составляет срок не дольше, чем этого требуют цели их
+                обработки», но не более 3 лет с момента получения согласия
+                пользователя на обработку персональных данных
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
       <p
         align="justify"
-        style="
-          orphans: 0;
-          margin-bottom: 0in;
-          line-height: 100%;
-          widows: 0;
-          text-indent: 0.5in;
-        "
+        style="orphans: 0; margin-bottom: 0in; line-height: 100%; widows: 0"
       >
         <br />
       </p>
@@ -818,7 +883,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -832,7 +897,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -845,7 +910,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -859,7 +924,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -874,7 +939,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -887,7 +952,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -904,7 +969,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -922,7 +987,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -939,7 +1004,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -959,7 +1024,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -978,7 +1043,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -996,7 +1061,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1012,7 +1077,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1028,7 +1093,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1042,35 +1107,25 @@
       </p>
       <p
         align="justify"
-        style="
-          orphans: 0;
-          margin-bottom: 0in;
-          line-height: 100%;
-          widows: 0;
-          text-indent: 0.5in;
-        "
+        style="orphans: 0; margin-bottom: 0in; line-height: 100%; widows: 0"
       >
         <br />
       </p>
-      <p
-        align="center"
-        style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0"
-      >
+      <p style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0">
         <a name="sub_300"></a>
 
-        <b style="font-size: 21px;">3. Требования к помещениям, в которых производится обработка</b>
+        <b style="font-size: 21px"
+          >3. Требования к помещениям, в которых производится обработка</b
+        >
       </p>
-      <p
-        align="center"
-        style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0"
-      >
-        <b style="font-size: 21px;">персональных данных</b>
+      <p style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0">
+        <b style="font-size: 21px">персональных данных</b>
       </p>
       <p
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1090,7 +1145,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1108,7 +1163,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1125,7 +1180,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1141,33 +1196,20 @@
       </p>
       <p
         align="justify"
-        style="
-          orphans: 0;
-          margin-bottom: 0in;
-          line-height: 100%;
-          widows: 0;
-          text-indent: 0.5in;
-        "
+        style="orphans: 0; margin-bottom: 0in; line-height: 100%; widows: 0"
       >
         <br />
       </p>
-      <p
-        align="center"
-        style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0"
-      >
+      <p style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0">
         <a name="sub_400"></a>
 
-        <b style="font-size: 21px;">4. Права и обязанности администрации сайта</b>
+        <b style="font-size: 21px"
+          >4. Права и обязанности администрации сайта</b
+        >
       </p>
       <p
         align="justify"
-        style="
-          text-indent: 0.5in;
-          widows: 0;
-          line-height: 100%;
-          margin-bottom: 0in;
-          orphans: 0;
-        "
+        style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0"
       >
         <a name="sub_401"></a>
 
@@ -1184,7 +1226,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1201,7 +1243,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1217,7 +1259,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1233,7 +1275,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1247,13 +1289,7 @@
       </p>
       <p
         align="justify"
-        style="
-          text-indent: 0.5in;
-          widows: 0;
-          line-height: 100%;
-          margin-bottom: 0in;
-          orphans: 0;
-        "
+        style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0"
       >
         <a name="sub_406"></a>
 
@@ -1273,7 +1309,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1286,7 +1322,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1311,7 +1347,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1322,13 +1358,7 @@
       </p>
       <p
         align="justify"
-        style="
-          text-indent: 0.5in;
-          widows: 0;
-          line-height: 100%;
-          margin-bottom: 0in;
-          orphans: 0;
-        "
+        style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0"
       >
         - осуществление внутреннего контроля и (или) аудита соответствия
         обработки персональных данных
@@ -1341,13 +1371,7 @@
       </p>
       <p
         align="justify"
-        style="
-          text-indent: 0.5in;
-          widows: 0;
-          line-height: 100%;
-          margin-bottom: 0in;
-          orphans: 0;
-        "
+        style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0"
       >
         - оценка вреда, который может быть причинен пользователям сайта в случае
         нарушения
@@ -1362,7 +1386,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1377,29 +1401,22 @@
       </p>
       <p
         align="justify"
-        style="
-          orphans: 0;
-          margin-bottom: 0in;
-          line-height: 100%;
-          widows: 0;
-          text-indent: 0.5in;
-        "
+        style="orphans: 0; margin-bottom: 0in; line-height: 100%; widows: 0"
       >
         <br />
       </p>
-      <p
-        align="center"
-        style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0"
-      >
+      <p style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0">
         <a name="sub_500"></a>
 
-        <b style="font-size: 21px;">5. Права пользователей сайта на защиту своих персональных данных</b>
+        <b style="font-size: 21px"
+          >5. Права пользователей сайта на защиту своих персональных данных</b
+        >
       </p>
       <p
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1414,7 +1431,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1427,7 +1444,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1439,7 +1456,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1454,7 +1471,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1469,7 +1486,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1484,7 +1501,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1500,13 +1517,7 @@
       </p>
       <p
         align="justify"
-        style="
-          text-indent: 0.5in;
-          widows: 0;
-          line-height: 100%;
-          margin-bottom: 0in;
-          orphans: 0;
-        "
+        style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0"
       >
         <a name="sub_503"></a>
 
@@ -1524,7 +1535,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1540,7 +1551,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1553,29 +1564,22 @@
       </p>
       <p
         align="justify"
-        style="
-          orphans: 0;
-          margin-bottom: 0in;
-          line-height: 100%;
-          widows: 0;
-          text-indent: 0.5in;
-        "
+        style="orphans: 0; margin-bottom: 0in; line-height: 100%; widows: 0"
       >
         <br />
       </p>
-      <p
-        align="center"
-        style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0"
-      >
+      <p style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0">
         <a name="sub_600"></a>
 
-        <b style="font-size: 21px;">6. Порядок уничтожения, блокирования персональных данных</b>
+        <b style="font-size: 21px"
+          >6. Порядок уничтожения, блокирования персональных данных</b
+        >
       </p>
       <p
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1593,7 +1597,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1611,7 +1615,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1629,7 +1633,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1646,7 +1650,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1663,7 +1667,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1678,7 +1682,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1698,7 +1702,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1716,7 +1720,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1731,7 +1735,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1748,7 +1752,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1764,13 +1768,7 @@
       </p>
       <p
         align="justify"
-        style="
-          text-indent: 0.5in;
-          widows: 0;
-          line-height: 100%;
-          margin-bottom: 0in;
-          orphans: 0;
-        "
+        style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0"
       >
         <a name="sub_610"></a>
 
@@ -1788,7 +1786,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1801,13 +1799,7 @@
       </p>
       <p
         align="justify"
-        style="
-          text-indent: 0.5in;
-          widows: 0;
-          line-height: 100%;
-          margin-bottom: 0in;
-          orphans: 0;
-        "
+        style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0"
       >
         <a name="sub_611"></a>
 
@@ -1823,7 +1815,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1839,7 +1831,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1854,7 +1846,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1869,7 +1861,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1880,23 +1872,14 @@
       </p>
       <p
         align="justify"
-        style="
-          orphans: 0;
-          margin-bottom: 0in;
-          line-height: 100%;
-          widows: 0;
-          text-indent: 0.5in;
-        "
+        style="orphans: 0; margin-bottom: 0in; line-height: 100%; widows: 0"
       >
         <br />
       </p>
-      <p
-        align="center"
-        style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0"
-      >
+      <p style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0">
         <a name="sub_700"></a>
 
-        <b style="font-size: 21px;">
+        <b style="font-size: 21px">
           7. Ответственность за нарушение норм, регулирующих обработку и защиту
           персональных данных пользователей сайта
         </b>
@@ -1905,7 +1888,7 @@
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1921,13 +1904,7 @@
       </p>
       <p
         align="justify"
-        style="
-          text-indent: 0.5in;
-          widows: 0;
-          line-height: 100%;
-          margin-bottom: 0in;
-          orphans: 0;
-        "
+        style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0"
       >
         <a name="sub_702"></a>
 
@@ -1944,29 +1921,20 @@
       </p>
       <p
         align="justify"
-        style="
-          orphans: 0;
-          margin-bottom: 0in;
-          line-height: 100%;
-          widows: 0;
-          text-indent: 0.5in;
-        "
+        style="orphans: 0; margin-bottom: 0in; line-height: 100%; widows: 0"
       >
         <br />
       </p>
-      <p
-        align="center"
-        style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0"
-      >
+      <p style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0">
         <a name="sub_800"></a>
 
-        <b style="font-size: 21px;">8. Изменение политики конфиденциальности</b>
+        <b style="font-size: 21px">8. Изменение политики конфиденциальности</b>
       </p>
       <p
         align="justify"
         style="
           widows: 0;
-          text-indent: 0.5in;
+
           line-height: 100%;
           margin-bottom: 0in;
           orphans: 0;
@@ -1982,13 +1950,7 @@
       </p>
       <p
         align="justify"
-        style="
-          text-indent: 0.5in;
-          widows: 0;
-          line-height: 100%;
-          margin-bottom: 0in;
-          orphans: 0;
-        "
+        style="widows: 0; line-height: 100%; margin-bottom: 0in; orphans: 0"
       >
         <a name="sub_802"></a>
 
@@ -2001,64 +1963,39 @@
         <a href="http://sihsih.online">http://sihsih.online</a>
         .
       </p>
-      <div title="footer">
-        <table
-          width="100%"
-          cellpadding="0"
-          cellspacing="0"
-          style="display: flex; justify-content: end"
-        >
-          <col width="298" />
-          <col width="298" />
-          <tr style="display: flex; justify-content: end">
-            <td width="298" style="border: none; padding: 0in">
-              <p
-                lang="ru-RU"
-                class="western"
-                align="left"
-                style="
-                  widows: 2;
-                  margin-left: 1.23in;
-                  orphans: 2;
-                  text-indent: 0in;
-                "
-              >
-                <span style="color: #000000; font-weight: 700;">
-                  © СИХСИХ (
-                  <span lang="en-US">SIHSIH</span>
-                  ).
-                </span>
+    </div>
+    <div class="footer-container">
+      <div class="container">
+        <footer class="main-footer">
+          <div class="footer-columns">
+            <div class="footer-section">
+              <h2>КОНТАКТЫ</h2>
+              <p>support@sihsih.ru</p>
+              <p>+7 (999) 888–77–77</p>
+            </div>
+            <div class="footer-section">
+              <h2>ПРАВОВЫЕ ДОКУМЕНТЫ</h2>
+              <p>
+                <a href="web-privacy-policy.html"
+                  >Политика конфиденциальности</a
+                >
               </p>
-              <p
-                lang="ru-RU"
-                class="western"
-                align="left"
-                style="
-                  widows: 2;
-                  margin-left: 1.23in;
-                  orphans: 2;
-                  text-indent: 0in;
-                "
-              >
-                <span style="color: #000000">Все права защищены.</span>
+              <p>
+                <a href="user-agreement.html">Пользовательское соглашение</a>
               </p>
-              <p
-                lang="ru-RU"
-                class="western"
-                align="left"
-                style="
-                  widows: 2;
-                  margin-left: 1.23in;
-                  orphans: 2;
-                  text-indent: 0in;
-                "
-              >
-                <span style="color: #000000">ООО «ПОКОЛЕНИЕ СМАРТ»</span>
+              <p>
+                <a href="personal-data-agreement.html"
+                  >Согласие на обработку персональных данных</a
+                >
               </p>
-            </td>
-          </tr>
-        </table>
-        <p lang="ru-RU" style="text-indent: 0in; margin-left: 0in"><br /></p>
+            </div>
+          </div>
+          <hr class="footer-divider" />
+          <div class="footer-bottom">
+            <p><strong>© СИХСИХ (SIHSIH)</strong></p>
+            <p>Все права защищены ООО “Поколение Смарт”</p>
+          </div>
+        </footer>
       </div>
     </div>
   </body>
